@@ -1,0 +1,8 @@
+spring:
+    application:
+        name: mcsv-todo
+    r2dbc:
+        url: r2dbc:postgresql://142.93.13.2:5432/db_todo?schema=data
+        username: utodo
+        password: utodo
+
