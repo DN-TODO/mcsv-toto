@@ -1,0 +1,23 @@
+### Crear un estado
+POST http://localhost:8080/api/state
+Content-Type: application/json
+
+{
+  "stateDescription": "En progreso 2",
+  "stateComment": "Estado inicial 5"
+}
+
+### Actualizar un estado
+PUT http://localhost:8080/api/state/7
+Content-Type: application/json
+
+{
+  "stateDescription": "Modificado 7 xxsdfsadfxx",
+  "stateComment": "Estado actualizado"
+}
+
+### Obtener un estado por ID
+GET http://localhost:8080/api/state/7
+
+### Eliminar un estado
+DELETE http://localhost:8080/api/state/1

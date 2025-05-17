@@ -1,0 +1,31 @@
+### Crear una tarea
+POST http://localhost:8080/api/task
+Content-Type: application/json
+
+{
+  "taskTitle": "Tarea de ejemplo",
+  "taskDescription": "Descripción de la tarea",
+  "idState": 1,
+  "userId": 1,
+  "createdAt": "2025-05-16T10:00:00",
+  "updatedAt": "2025-05-16T10:00:00"
+}
+
+### Actualizar una tarea
+PUT http://localhost:8080/api/task/1
+Content-Type: application/json
+
+{
+  "taskTitle": "Tarea actualizada",
+  "taskDescription": "Descripción actualizada",
+  "idState": 2,
+  "userId": 1,
+  "createdAt": "2025-05-16T10:00:00",
+  "updatedAt": "2025-05-16T12:00:00"
+}
+
+### Obtener una tarea por ID
+GET http://localhost:8080/api/task/1
+
+### Eliminar una tarea
+DELETE http://localhost:8080/api/task/1
